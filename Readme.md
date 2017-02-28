@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Эдуард Данилов](https://up.htmlacademy.ru/adaptive/10/user/20497).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
