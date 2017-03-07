@@ -3,79 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Вязание на заказ</title>
-  </head>
+    <base href="https://htmlacademy-adaptive.github.io/20497-mishka/2/">
+</head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" width="320" height="106">
-      </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Меню</button>
-        <div class="main-nav__wrapper">
+      <div class="container">
+        <img class="logo" src="http://placehold.it/150x100" alt="MISHKA" width="320" height="106">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Меню</button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Каталог</a></li>
-            <li class="main-nav__item"><a href="#">Форма заказа</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Каталог</a></li>
+            <li class="main-nav__item"><a href="form.html">Форма заказа</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <section class="form-order">
-      <h2 class="form-order__title">Вязание на заказ</h2>
+      <div class="container">
+      <h2 class="title">Вязание на заказ</h2>
       <form action="https://echo.htmlacademy.ru/" method="post" class="form-order__main">
         <fieldset class="form-order__field">
-          <legend>Тип</legend>
-            <input type="radio" name="type" id="type" value="accessory" checked>Аксессуар для интерьера
-            <input type="radio" name="type" id="type" value="toy">Детская игрушка
+          <span>Тип</span>
+          <input type="radio" name="type" id="accessory" value="accessory" checked>
+          <label for="accessory">Аксессуар для интерьера</label>
+          <input type="radio" name="type" id="toy" value="toy">
+          <label for="toy">Детская игрушка</label>
         </fieldset>
         <fieldset class="form-order__field">
-          <legend>Цвет</legend>
-            <input type="checkbox" name="color" id="color" value="white" checked>Белый
-            <input type="checkbox" name="color" id="color" value="grey" checked>Серый
-            <input type="checkbox" name="color" id="color" value="tiffany">"Тиффани"
-            <input type="checkbox" name="color" id="color" value="black">Черный
-            <input type="checkbox" name="color" id="color" value="pink">Розовый
-            <input type="checkbox" name="color" id="color" value="orange">Оранжевый
+          <span>Цвет</span>
+          <input type="checkbox" name="color" id="white" value="white" checked>
+          <label for="white">Белый</label>
+          <input type="checkbox" name="color" id="grey" value="grey" checked>
+          <label for="grey">Серый</label>
+          <input type="checkbox" name="color" id="tiffany" value="tiffany">
+          <label for="tiffany">"Тиффани"</label>
+          <input type="checkbox" name="color" id="black" value="black">
+          <label for="black">Черный</label>
+          <input type="checkbox" name="color" id="pink" value="pink">
+          <label for="pink">Розовый</label>
+          <input type="checkbox" name="color" id="orange" value="orange">
+          <label for="orange">Оранжевый</label>
         </fieldset>
         <fieldset class="form-order__field">
-          <legend>ФИО</legend>
-            <label for="name">Имя:</label>
-              <p><input type="text" name="name" id="name" placeholder="Введите ваше имя*" required></p>
-            <label for="fam">Фамилия:</label>
-              <p><input type="text" name="fam" id="fam" placeholder="Укажите фамилию*" required></p>
-            <label for="otche">Отчество:</label>
-              <p><input type="text" name="otche" id="otche" placeholder="Отчество, если желаете*" required></p>
+          <span>ФИО</span>
+          <label for="name">Имя:</label>
+          <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+          <label for="surname">Фамилия:</label>
+          <input type="text" name="fam" id="surname" placeholder="Укажите фамилию*" required>
+          <label for="middle_name">Отчество:</label>
+          <input type="text" name="otche" id="middle_name" placeholder="Отчество, если желаете*" required>
         </fieldset>
         <fieldset class="form-order__field">
-          <legend><label for="tel">ТЕЛ</label></legend>
-            <input type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*" pattern="" required>
-            <img src="http://placehold.it/150x100" width="20" height="30">
+          <span><label for="phone">ТЕЛ</label></span>
+          <input type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX*" pattern="" required>
+          <i class="icon"></i>
         </fieldset>
         <fieldset class="form-order__field">
-          <legend><label for="email">E-MAIL</label></legend>
-            <input type="email" name="email" id="email" placeholder="Ваш Email*" pattern="" required>
-            <img src="http://placehold.it/150x100" width="20" height="30">
+          <label for="email">E-MAIL</label>
+          <input type="email" name="email" id="email" placeholder="Ваш Email*" pattern="" required>
+          <i class="icon"></i>
         </fieldset>
-          <legend><label for="dop">ДОП</label></legend>
-            <textarea name="dop" id="dop" cols="25" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <fieldset class="form-order__field">
+          <label for="add">ДОП</label>
+          <textarea name="add" id="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
-        <p>*Поля обязательны для заполнения</p>
-        <input type="submit" value="Отправить заказ"></input>
+        <span>*Поля обязательны для заполнения</span>
+        <button class="item__order btn" type="submit">Отправить заказ</button>
       </form>
     </section>
 
     <footer class="page-footer">
-      <p class="page-footer__social">
-        <span class="social-links">
-          <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </span>
-      </p>
-      <p class="page-footer__copyright">Разработано:
-        <a class="page-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/150x100" width="26" height="36"></a>
-      </p>
+      <div class="container">
+        <p class="social">
+          <span class="social-links">
+            <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </span>
+        </p>
+        <p class="page-footer__copyright">Разработано:
+          <a class="page-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="http://placehold.it/150x100" width="26" height="36">
+          </a>
+        </p>
       </div>
     </footer>
   </body>
