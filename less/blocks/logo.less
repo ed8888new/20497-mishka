@@ -1,3 +1,25 @@
 .logo {
-  float:left;
+  height: 80px;
+  text-align: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.logo img {
+  width: 100px;
+  height: 85px;
+}
+
+@media @tablet-widths {
+    .logo {
+    position: absolute;
+    left: 30px;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media @desktop-widths {
+  .page-header__logo {
+    height: 648px;
+  }
 }

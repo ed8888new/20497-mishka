@@ -1,5 +1,25 @@
 .promo {}
 
+.promo__container {
+  position: relative;
+}
+
+.promo__main {
+  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 30%;
+  height: 220px;
+  padding: 25px 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.promo__slogan {
+  color: @black;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.promo__links {}
+
 .promo__link {
   padding: 30px;
   display: block;
@@ -11,42 +31,26 @@
   font-weight: bold;
 }
 
-.promo__link:first-child::after {
+.promo__link--first::after {
   content: "";
   position: absolute;
   width: 80px;
   height: 60px;
   margin-left: 90px;
-  top: 380px;
-  background: url(/img/icon-interior.svg) no-repeat 50% 50%;
+  top: 300px;
+  background: url("../img/icon-interior.svg") no-repeat 50% 50%;
 }
 
-.promo__link:nth-child(2)::after {
+.promo__link--second::after {
   content: "";
   position: absolute;
   width: 80px;
   height: 60px;
   margin-left: 100px;
-  top: 495px;
-  background: url("/img/icon-toy.svg") no-repeat 100% 100%;
+  top: 415px;
+  background: url("../img/icon-toy.svg") no-repeat 100% 100%;
 }
 
-.promo__link:nth-child(2) {
+.promo__link--second {
   background: @turquoise-dark;
-}
-
-.promo__links {}
-
-.promo__main {
-  background: url("/img/hero-mobile@1x.jpg") no-repeat 50% 30%;
-  height: 220px;
-  padding: 25px 0;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.promo__slogan {
-  color: @black;
-  line-height: 1.3;
-  text-align: center;
 }
