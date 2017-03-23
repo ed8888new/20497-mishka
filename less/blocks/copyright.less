@@ -1,0 +1,25 @@
+.copyright {
+  display: block;
+  margin: 0 auto;
+  /*width: 260px;*/
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.copyright-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: @black;
+  font-size: 18px;
+  width: 100%;
+}
+
+.copyright-link::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 0 -15px 20px;
+  background: url("../img/htmlacademy.svg") no-repeat 50% 50%;
+}

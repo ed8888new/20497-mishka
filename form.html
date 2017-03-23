@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Вязание на заказ</title>
-    <base href="https://htmlacademy-adaptive.github.io/20497-mishka/2/">
-</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!--base href="https://htmlacademy-adaptive.github.io/20497-mishka/2/"-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <img class="logo" src="http://placehold.it/150x100" alt="MISHKA" width="320" height="106">
+        <img class="logo" src="img/logo-mobile.svg" alt="MISHKA" width="100" height="80">
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Меню</button>
           <ul class="main-nav__list">
@@ -22,7 +25,7 @@
 
     <section class="form-order">
       <div class="container">
-      <h2 class="title">Вязание на заказ</h2>
+      <h2 class="form-order__title  title">Вязание на заказ</h2>
       <form action="https://echo.htmlacademy.ru/" method="post" class="form-order__main">
         <fieldset class="form-order__field">
           <span>Тип</span>
@@ -70,23 +73,19 @@
           <textarea name="add" id="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <span>*Поля обязательны для заполнения</span>
-        <button class="item__order btn" type="submit">Отправить заказ</button>
+        <button class="item__order  btn" type="submit">Отправить заказ</button>
       </form>
     </section>
 
     <footer class="page-footer">
-      <div class="container">
-        <p class="social">
-          <span class="social-links">
-            <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </span>
+      <div class="page-footer__social">
+        <p class="social-links">
+          <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">in</a>
+          <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">fb</a>
+          <a class="social-link  social-link--tw" href="https://twitter.com/htmlacademy_ru">tw</a>
         </p>
-        <p class="page-footer__copyright">Разработано:
-          <a class="page-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="http://placehold.it/150x100" width="26" height="36">
-          </a>
+        <p class="copyright">
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
         </p>
       </div>
     </footer>

@@ -1,0 +1,35 @@
+.icon() {
+  display: block;
+  width: 100%;
+  height: 40px;
+  float: left;
+  margin: 10px 0;
+  fill: @turquoise;
+}
+
+.icon {
+  &-flower {
+    .icon;
+    background: url("../img/icon-feature-1.svg") no-repeat;
+  }
+  &-bill {
+    .icon;
+    background: url("../img/icon-feature-3.svg") no-repeat;
+  }
+  &-heart {
+    .icon;
+    background: url("../img/icon-feature-5.svg") no-repeat;
+  }
+  &-ball {
+    .icon();
+    background: url("../img/icon-feature-2.svg") no-repeat;
+  }
+  &-rocket {
+    .icon();
+    background: url("../img/icon-feature-4.svg") no-repeat;
+  }
+  &-box {
+    .icon();
+    background: url("../img/icon-feature-6.svg") no-repeat;
+  }
+}
