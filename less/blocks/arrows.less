@@ -1,5 +1,7 @@
 .arrows {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
   &__left {
   .arrow;
   background: url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
@@ -8,5 +10,19 @@
   .arrow;
   border-left: 0px solid @gray;
   background: url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+  }
+}
+
+@media @tablet-widths {
+
+  .arrows {
+    display: flex;
+    order: 5;
+    justify-content: center;
+    width: 30%;
+    &__left, &__right {
+      border: 0;
+      padding: 0;
+    }
   }
 }
