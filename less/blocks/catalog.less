@@ -1,1 +1,34 @@
-.catalog {}
+.catalog {
+
+}
+
+.catalog__container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+
+.catalog__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 175px;
+  background-color: #f9f9f9;
+}
+
+@media @tablet-widths {
+
+  .catalog {
+    position: relative;
+    top: -83px;
+  }
+
+  .catalog__title {
+    height: 240px;
+  }
+
+  .catalog__container {
+    padding: 50px 50px 0px;
+  }
+}

@@ -3,6 +3,11 @@
   margin-bottom: 30px;
 }
 
+.item__container {
+  padding: 30px;
+  padding-bottom: 20px;
+}
+
 div.item > h3, div.item > span {
   display: inline-block;
   margin: 20px;
@@ -10,19 +15,20 @@ div.item > h3, div.item > span {
 
 .item__features {
   font-size: 13px;
-  border-bottom: 1px solid @gray;
-  margin: 0 20px;
   padding-bottom: 20px;
 }
 
 .item__name {
-  font-size: 18px;
+  font-size: 17px;
+}
+
+.item__container h3 {
+  margin: 0px;
 }
 
 .item__order {
   width: 40px;
   float: right;
-  margin: 10px 10px 0 0;
   display: inline-block;
   background: url("../img/icon-cart.svg") no-repeat 50% 50%;
   border: 0;
@@ -31,4 +37,54 @@ div.item > h3, div.item > span {
 .item__price {
   font-size: 15px;
   font-weight: bold;
+}
+
+.item__bottom {
+  padding-top: 20px;
+  border-top: 1px solid @gray;
+}
+
+@media @tablet-widths {
+
+  .item {
+    display: flex;
+    height: 330px;
+    margin-bottom: 50px;
+  }
+
+  .item img {
+    width: 50%;
+  }
+
+  .item__name {
+    font-size: 20px;
+  }
+
+  .item__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  .item__features, .item__price {
+    font-size: 16px;
+  }
+
+  .item__features {
+
+  }
+
+  .item__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .item__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
