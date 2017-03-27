@@ -2,6 +2,44 @@
 
 .page-footer__title {}
 
-.page-footer__write {
+.page-footer__write {}
 
+.page-footer__container {
+  padding: 0 30px;
+}
+
+.page-footer__middle {
+  padding: 30px;
+}
+
+@media @tablet-widths {
+
+  .page-footer__container {
+    padding: 50px;
+  }
+
+  .page-footer__title::after {
+    content: "";
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background: url("../img/icon-flag.svg") no-repeat 50% 50%;
+
+  }
+  .page-footer__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-footer__middle {
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .page-footer__write {
+    width: 40%;
+  }
 }

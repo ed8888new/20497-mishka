@@ -1,11 +1,15 @@
 .promo {}
 
 .promo__container {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  background-color: #f9f9f9;
 }
 
 .promo__main {
   display: flex;
+  justify-content: center;
   height: 220px;
   font-size: 26px;
   font-weight: bold;
@@ -63,10 +67,38 @@
   top: -83px;
   }
 
+  .promo__main {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /*background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -9px;*/
+  }
+
+  .promo__main img {
+    width: 93%;
+    margin: auto;
+    height: 373px;
+    display: flex;
+  }
+
+  .promo__slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #000000;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 42px;
+}
+
   .promo__links {
     display: flex;
     justify-content: flex-start;
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .promo__link--first, .promo__link--second {
@@ -78,7 +110,6 @@
   .promo__link--first::after, .promo__link--second::after {
     display: flex;
     content: "";
-    position: relative;
     width: 80px;
     height: 60px;
   }
