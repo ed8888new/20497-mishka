@@ -43,3 +43,24 @@
     width: 40%;
   }
 }
+
+@media @desktop-widths {
+
+  .page-footer__title {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__title::after {
+    width: 147px;
+  }
+
+  .page-footer__middle {
+    width: 50%;
+    padding: 60px 20px 100px 20px;
+}
+}

@@ -1,4 +1,7 @@
-.week-item {}
+.week-item {
+  display: flex;
+  flex-direction: column;
+}
 
 .week-item__container {
   padding: 0 30px 30px;
@@ -44,6 +47,7 @@
 
 .week-item__foto img {
     width: 100%;
+    height: auto;
 }
 
 .week-item__price {
@@ -58,6 +62,7 @@
 
   .week-item__container {
   display: flex;
+  justify-content: space-between;
   flex-flow: column wrap;
   padding: 0 50px;
   height: 407px;
@@ -83,13 +88,15 @@
     font-size: small;
   }
 
-  .week-item__intro, .week-item__desc, .week-item__left {
+  .week-item__middle, .week-item__bottom {
     width: 44%;
   }
 
   .week-item__foto {
+    display: flex;
+    justify-content: flex-start;
     order: 1;
-    height: 100%;
+    width: 44%;
   }
 
   .week-item__price {
@@ -98,5 +105,68 @@
 
   .week-item__container p {
     margin: 0;
+  }
+}
+
+@media @desktop-widths {
+
+  .week-item__container {
+    height: 470px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  .week-item {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+
+  .week-item__top {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    z-index: 1;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  .week-item__foto {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .week-item__label {
+    width: 12%;
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .week-item__middle, .week-item__bottom {
+    width: 30%;
+    padding-left: 14%;
+  }
+
+  .week-item__title {
+    width: 85%;
+    padding-left: 2%;
+    font-size: 57px;
+  }
+
+  .week-item__container p {
+    line-height: 2;
+    font-size: 19px;
+  }
+
+  .week-item__desc {
+    font-size: 16px;
   }
 }
