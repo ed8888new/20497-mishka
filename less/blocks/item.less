@@ -48,12 +48,8 @@ div.item > h3, div.item > span {
 
   .item {
     display: flex;
-    height: 330px;
+    height: auto;
     margin-bottom: 50px;
-  }
-
-  .item img {
-    width: 50%;
   }
 
   .item__name {
@@ -86,5 +82,25 @@ div.item > h3, div.item > span {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media @desktop-widths {
+  .item {
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .item__container {
+    width: auto;
+  }
+
+  .item__name {
+    margin: 0
+  }
+
+  .item:last-child p.item__features {
+    margin: 0;
+    padding-top: 5px;
   }
 }
