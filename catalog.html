@@ -17,14 +17,16 @@
         </picture>
       </div> <!--  main-nav--opened  main-nav--closed-->
       <div class="main-nav__toggle  main-nav--closed "></div>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-      </ul>
-      <ul class="main-nav__user-items">
-        <li class="main-nav__user-search"><a href="">Поиск по сайту</a></li>
-        <li class="main-nav__user-cart"><a href="">Корзина: пока пуста</a></li>
-      </ul>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__user-items">
+          <li class="main-nav__user-search"><a href="">Поиск по сайту</a></li>
+          <li class="main-nav__user-cart"><a href="">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
       <span class="header__delivery">Бесплатная доставка по России</span>
       <span class="header__new">Новые поступления</span>
       <span class="header__sales">Распродажа</span>
@@ -32,6 +34,7 @@
 
     <section class="catalog">
       <h2 class="catalog__title  title">Каталог товаров</h2>
+      <div class="conteiner2">
       <div class="catalog__container">
         <article class="item">
           <picture>
@@ -85,10 +88,10 @@
           </div>
         </article>
       </div>
-    </section>
+
 
     <section class="publication">
-      <div class="publication__container">
+
         <div class="publication__top">
           <i class="icon-camera"></i>
           <h2 class="item__name">Процесс производства</h2>
@@ -107,7 +110,9 @@
         <br>
         <br>
         <a class="btn" href="form.html">Сделать заказ</a></p>
-      </div>
+
+    </section>
+    </div>
     </section>
 
     <footer class="page-footer">
