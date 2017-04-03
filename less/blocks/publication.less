@@ -10,9 +10,7 @@
   border: 1px solid @gray;
 }
 
-.publication__title {
-
-}
+.publication__title {}
 
 .publication__top {
   display: flex;
@@ -20,6 +18,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+  border: 1px solid @gray;
 }
 
 .publication__text {
@@ -27,20 +26,22 @@
   margin: 0;
   font-size: 14px;
   line-height: 2;
+  border: 1px solid @gray;
 }
 
 @media @tablet-widths {
 
   .publication {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    top: -83px;
-    padding: 0 50px;
+    padding: 0 50px 50px;
   }
 
   .publication__top {
     order: 1;
-    padding-left: 30px;
     justify-content: flex-start;
+    border-bottom: none;
   }
 
   .publication__container img {
@@ -48,8 +49,9 @@
   }
 
   .publication__text {
-    padding: 0 50px 50px;
+    padding: 0 40px 40px;
     order: 2;
+    border-top: none;
   }
 }
 

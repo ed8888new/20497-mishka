@@ -35,6 +35,7 @@
   &-camera {
     .icon();
     width: 40px;
+    margin: 0 30px;
     background: url("../img/icon-video.svg") no-repeat;
   }
   &-play {
@@ -53,8 +54,8 @@
   &-phone {
     .icon();
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 5px;
+    top: -5px;
     width: 25px;
     height: 25px;
     margin: 0;
@@ -63,11 +64,28 @@
   &-mail {
     .icon();
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 0;
+    top: -5px;
     width: 35px;
     height: 30px;
     margin: 0;
     background: url("../img/icon-mail.svg") no-repeat;
+  }
+}
+
+@media @tablet-widths {
+
+  .icon {
+    &-camera {
+      margin-right: 20px;
+    }
+    &-phone {
+      top: 20px;
+      right: 25px;
+    }
+    &-mail {
+      top: 20px;
+      right: 20px;
+    }
   }
 }

@@ -8,26 +8,47 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+    <div class="body-mask">
+      <div class="body-mask__popup">
+        <p class="body-mask__title">Добавить в корзину</p>
+        <p>Выберите размер:</p>
+        <ul class="body-mask__size">
+          <li class="body-mask__item">S</li>
+          <li class="body-mask__item">M</li>
+          <li class="body-mask__item">L</li>
+        </ul>
+        <a class="body-mask__cart  btn" href="form.html">Добавить</a>
+      </div>
+    </div>
     <header class="page-header">
-      <div class="logo">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="MISHKA" width="100" height="80">
-        </picture>
-      </div> <!--  main-nav--opened  main-nav--closed-->
-      <div class="main-nav__toggle  main-nav--closed "></div>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-      </ul>
-      <ul class="main-nav__user-items">
-        <li class="main-nav__user-search"><a href="">Поиск по сайту</a></li>
-        <li class="main-nav__user-cart"><a href="">Корзина: пока пуста</a></li>
-      </ul>
-      <span class="header__delivery">Бесплатная доставка по России</span>
-      <span class="header__new">Новые поступления</span>
-      <span class="header__sales">Распродажа</span>
+      <div class="container-main">
+        <div class="logo">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="MISHKA" width="100" height="80">
+          </picture>
+        </div>
+        <div class="main-nav__toggle">
+          <div class="main-nav__burger"></div>
+          <div class="main-nav__croos"></div>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__user-items">
+            <li class="main-nav__user-search"><a href="">Поиск по сайту</a></li>
+            <li class="main-nav__user-cart"><a href="">Корзина: пока пуста</a></li>
+          </ul>
+        </nav>
+        <div class="header">
+          <span class="header__delivery">Бесплатная доставка по России</span>
+          <span class="header__new">Новые поступления</span>
+          <span class="header__sales">Распродажа</span>
+        </div>
+      </div>
     </header>
 
     <section class="form-order">
@@ -140,4 +161,5 @@
       </div>
     </footer>
   </body>
+  <script type="text/javascript" src="js/show.js"></script>
 </html>
