@@ -3,7 +3,8 @@
   justify-content: center;
   font-size: 14px;
   line-height: 2;
-  border-spacing: 20px;
+  border-spacing: 0px;
+  padding: 28px 0;
 }
 
 .address tr:first-of-type td:nth-child(2) {
@@ -11,21 +12,29 @@
   display: inline-block;
 }
 
+.address tr:last-of-type {
+  line-height: 2.3;
+}
+
 .address__field {
   width: 50px;
+  padding-right: 26px;
   vertical-align: top;
+  padding-bottom: 24px;
 }
 
 .address__value {
   display: inline-block;
-  padding-right: 0px;
+  padding-right: 5px;
 }
 
 
 @media @tablet-widths {
 
   .address {
-    margin-top: 30px;
+    margin-top: 12px;
+    font-size: 17px;
+    padding-bottom: 48px;
   }
 
   .address__email {}
@@ -46,16 +55,18 @@
   .address__field {
     width: 20%;
     vertical-align: top;
+    padding-right: 8px;
   }
 
   .address tr:first-of-type td:nth-child(2) {
     border-bottom: 1px solid @turquoise;
-    height: 25px;
+    height: 33px;
   }
 
   .address tr:nth-of-type(2) td:nth-child(2) {
-    padding-left: 25px;
-    padding-right: 70px;
+    padding-left: 18px;
+    padding-right: 25px;
+    line-height: 2;
   }
 }
 
@@ -66,16 +77,21 @@
   }
 
   .address {
-    padding-left: 160px;
+    padding-bottom: 71px;
+    padding-left: 173px;
   }
 
   tr.address__descr {
-    width: 37%;
-    padding-bottom: 30px;
+    width: 55%;
+    padding-bottom: 3px;
     line-height: 2;
   }
 
   .address__descr {
     font-size: 16px;
+  }
+
+  .address__field {
+    padding-right: 12px;
   }
 }

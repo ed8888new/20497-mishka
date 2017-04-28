@@ -2,6 +2,8 @@
   height: 100%;
 }
 
+
+
 .reviews__container {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,9 @@
   display: none;
 }
 
-.reviews__title {}
+.reviews__title {
+  width: 100%;
+}
 
 .reviews__author-link {}
 
@@ -22,6 +26,7 @@
     display: flex;
     flex-direction: column;
     margin: 15px 0;
+    width: 100%;
 }
 
 .reviews__author-name {
@@ -32,13 +37,22 @@
 }
 
 .reviews__item {
-  font-size: 16px;
+  font-size: 15px;
+  padding-top: 7px;
   line-height: 2;
   margin: 0;
 }
 
 .reviews__write {
+  width: 100%;
   margin: 15px 0;
+}
+
+@media @mobile-widths-only {
+
+ .reviews img {
+    display: none;
+  }
 }
 
 @media @tablet-widths {
@@ -48,18 +62,22 @@
   }*/
 
   .reviews {
+    height: 480px;
     position: relative;
+  }
+
+  .reviews img {
+    width: auto;
+    position: absolute;
+    left: 0;
   }
 
   .reviews__top {
     position: absolute;
   }
 
-  .reviews__container {
-    display: flex;
-    flex-flow: row wrap;
+  .reviews .container-main {
     justify-content: space-between;
-    padding: 50px;
   }
 
   .reviews__container img {
@@ -75,21 +93,27 @@
     font-size: 17px;
     order: 2;
     z-index: 1;
+    line-height: 1.8;
+    padding-top: 0;
+    -webkit-margin-before: 0;
   }
 
   .reviews__title {
-    width: 60%;
+    width: 73%;
     z-index: 1;
+    padding-top: 73px;
   }
 
   .reviews__write {
     width: 26%;
-    margin-top: 0px;
+    margin: 0;
+    margin-top: 79px;
   }
 
-  .reviews__author-name, .reviews__author-link {}
-
-
+  .reviews__author-name {
+    font-size: 15px;
+    line-height: 3;
+  }
 
   .reviews__data {
     display: flex;
@@ -98,13 +122,26 @@
     width: 40%;
     order: 3;
     z-index: 1;
+    margin: 0;
+    margin-bottom: 45px;
   }
 }
 
 @media @desktop-widths {
 
     .reviews {
-      height: 450px;
+      height: 457px;
+      padding: 1px 50px;
+    }
+
+    .reviews__title {
+      padding-top: 63px;
+    }
+
+    .reviews .container-main {
+      width: 880px;
+      padding-left: 171px;
+      padding-right: 0;
     }
 
     .reviews__container img {
@@ -124,6 +161,11 @@
     }
 
     .reviews__data {
-      margin: 23px 0px 5px 5px;
+      margin-bottom: 130px;
+    }
+
+    .reviews__write {
+      width: 20%;
+      margin-top: 76px;
     }
 }

@@ -44,15 +44,15 @@
           </ul>
         </nav>
         <div class="header">
-          <span class="header__delivery">Бесплатная доставка по России</span>
-          <span class="header__new">Новые поступления</span>
-          <span class="header__sales">Распродажа</span>
+          <span class="header__delivery"><a href="">Бесплатная доставка по России</a></span>
+          <span class="header__new"><a href="">Новые поступления</a></span>
+          <span class="header__sales"><a href="">Распродажа</a></span>
         </div>
       </div>
     </header>
 
     <section class="promo">
-      <div class="promo__container">
+      <div class="container-main">
         <div class="promo__main">
           <picture>
             <source media="(min-width: 1150px)" srcset="../img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
@@ -65,11 +65,12 @@
           <a class="promo__link promo__link--first" href="#">Предметы<br> интерьера</a>
           <a class="promo__link promo__link--second" href="#">Детские<br>игрушки</a>
         </div>
-        <div class="decorate-white"></div>
       </div>
+      <div class="decorate-white"></div>
     </section>
 
     <section class="week-item">
+      <div class="container-main">
       <div class="week-item__top">
         <h2 class="week-item__title  title">Вязаные корзинки</h2>
         <span class="week-item__label">Товар недели</span>
@@ -104,12 +105,13 @@
           <a class="btn-choice  btn">Заказать</a>
         </div>
       </div>
+      </div>
     </section>
 
     <div class="decorate-gray"></div>
 
     <section class="features">
-      <div class="features__container">
+      <div class="container-main">
         <h2 class="features__title  title">Коротко о нас:</h2>
         <ul class="feature__list">
           <li class="feature__item">
@@ -141,7 +143,7 @@
     </section>
 
     <article class="reviews">
-      <div class="reviews__container">
+      <div class="container-main">
         <img src="../img/review@1x.jpg" srcset="../img/review@2x.jpg 2x" alt="Отзывы" width="350" height="457">
         <h2 class="reviews__title  title">Отзывы</h2>
         <blockquote class="reviews__item">
@@ -162,7 +164,7 @@
     <div class="decorate-gray"></div>
 
     <footer class="page-footer">
-      <div class="page-footer__container">
+    <div class="container-main">
         <h2 class="page-footer__title  title">Контакты</h2>
         <table class="address">
           <tr class="address__descr">
@@ -174,7 +176,7 @@
             <td class="address__value">г.Санкт-Петербург, ул.Большая Конюшенная, д. 19/8, офис 101</td>
           </tr>
         </table>
-      </div>
+
       <div class="map">
         <picture>
           <source media="(min-width: 1150px)" srcset="../img/map-desktop@1x.jpg 1x, ../img/map-desktop@2x.jpg 2x">
@@ -185,18 +187,21 @@
       <div class="page-footer__middle">
         <a class="page-footer__write  btn" href="">Напишите нам</a>
       </div>
+      </div>
       <div class="social">
-        <div class="logo">
-          <img src="img/logo-footer.svg" alt="MISHKA" width="100" height="80">
+        <div class="container-main">
+          <div class="logo">
+            <img src="img/logo-mobile.svg" alt="MISHKA" width="100" height="80">
+          </div>
+          <div class="social__link">
+            <a class="social__link--in" href="https://www.instagram.com/htmlacademy">in</a>
+            <a class="social__link--fb" href="https://www.facebook.com/htmlacademy">fb</a>
+            <a class="social__link--tw" href="https://twitter.com/htmlacademy_ru">tw</a>
+          </div>
+          <p class="copyright">
+            <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          </p>
         </div>
-        <div class="social__link">
-          <a class="social__link--in" href="https://www.instagram.com/htmlacademy">in</a>
-          <a class="social__link--fb" href="https://www.facebook.com/htmlacademy">fb</a>
-          <a class="social__link--tw" href="https://twitter.com/htmlacademy_ru">tw</a>
-        </div>
-        <p class="copyright">
-          <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        </p>
       </div>
     </footer>
     <script type="text/javascript" src="js/show.js"></script>

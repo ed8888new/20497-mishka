@@ -2,10 +2,12 @@
   border: 1px solid @gray;
   margin-bottom: 30px;
 }
+.item:hover {
+  box-shadow: 0 0 10px rgba(115, 115, 115, 0.5);
+}
 
 .item__container {
-  padding: 30px;
-  padding-bottom: 20px;
+  padding: 22px 30px 28px 27px;
 }
 
 div.item > h3, div.item > span {
@@ -15,7 +17,7 @@ div.item > h3, div.item > span {
 
 .item__features {
   font-size: 13px;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
 }
 
 .item__name {
@@ -27,7 +29,7 @@ div.item > h3, div.item > span {
 }
 
 .item__order {
-  width: 40px;
+  width: 20px;
   float: right;
   display: inline-block;
   background: url("../img/icon-cart.svg") no-repeat 50% 50%;
@@ -40,7 +42,7 @@ div.item > h3, div.item > span {
 }
 
 .item__bottom {
-  padding-top: 20px;
+  padding-top: 22px;
   border-top: 1px solid @gray;
 }
 
@@ -49,7 +51,11 @@ div.item > h3, div.item > span {
   .item {
     display: flex;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
+  }
+
+  .item picture {
+    width: 60%;
   }
 
   .item__name {
@@ -64,7 +70,7 @@ div.item > h3, div.item > span {
   }
 
   .item__features, .item__price {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .item__features {}
@@ -80,6 +86,7 @@ div.item > h3, div.item > span {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 19px;
   }
 }
 
@@ -98,8 +105,20 @@ div.item > h3, div.item > span {
     margin: 0
   }
 
+  .item__price {
+    font-size: 16px;
+  }
+
+  .item__features {
+    padding-bottom: 24px;
+  }
+
   .item:last-child p.item__features {
     margin: 0;
     padding-top: 5px;
+  }
+
+  .item picture {
+    width: auto;
   }
 }

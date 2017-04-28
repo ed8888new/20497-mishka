@@ -3,12 +3,10 @@
   flex-direction: column;
 }
 
-.week-item__container {
-  padding: 0 30px 30px;
-}
+.week-item__container {}
 
 .week-item__top {
-  padding: 30px;
+  padding-top: 26px;
   padding-bottom: 10px;
 }
 
@@ -27,8 +25,8 @@
 
 .week-item__desc {
   width: 100%;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-top: 17px;
+  margin-bottom: 28px;
   border-collapse: collapse;
   font-size: 15px;
 }
@@ -38,7 +36,7 @@
 }
 
 .week-item__value {
-  padding-left: 10px;
+  padding-left: 17px;
 }
 
 .week-item__foto {
@@ -53,7 +51,7 @@
 
 .week-item__price {
   display: block;
-  padding: 30px 0;
+  padding: 26px 0;
   text-align: center;
   letter-spacing: 1px;
   font-weight: bold;
@@ -65,15 +63,17 @@
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
-    padding: 0 50px;
-    height: 407px;
+    padding: 0;
+    padding-top: 6px;
+    height: 412px;
   }
 
   .week-item__top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px;
+    padding: 40px 0;
+    width: 100%;
   }
 
   .week-item__intro {
@@ -97,22 +97,35 @@
     display: flex;
     justify-content: flex-start;
     order: 1;
-    width: 44%;
+    padding-top: 8px;
+    padding-left: 40px;
+    width: 50%;
   }
 
   .week-item__price {
+    padding: 33px 0;
     font-size: 19px;
   }
 
   .week-item__container p {
     margin: 0;
+    line-height: 1.8;
+  }
+
+  .week-item__desc {
+    margin-top: 36px;
+    margin-bottom: 0;
+  }
+
+  .week-item__value {
+    padding-left: 0px;
   }
 }
 
 @media @desktop-widths {
 
   .week-item__container {
-    height: 478px;
+    height: 477px;
     width: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -124,7 +137,7 @@
     display: flex;
     flex-flow: row wrap;
     position: relative;
-    padding-top: 50px;
+    padding-top: 65px;
   }
 
   .week-item__top {
@@ -132,8 +145,8 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     z-index: 1;
-    padding-left: 50px;
-    padding-top: 61px;
+    padding-left: 47px;
+    padding-top: 47px;
     padding-bottom: 43px;
   }
 
@@ -142,26 +155,26 @@
     display: flex;
     justify-content: flex-start;
     position: absolute;
-    top: 65px;
+    top: 0;
     right: 0;
+    padding-top: 1px;
   }
 
   .week-item__label {
-    width: 12%;
+    width: 8%;
     padding-right: 0;
-    padding-left: 18px;
     font-size: 18px;
     line-height: 1;
   }
 
   .week-item__middle, .week-item__bottom {
-    width: 26%;
-    padding-left: 17%;
+    width: 28%;
+    padding-left: 13%;
   }
 
   .week-item__title {
     width: 85%;
-    padding-left: 3%;
+    padding-left: 4%;
     font-size: 51px;
   }
 

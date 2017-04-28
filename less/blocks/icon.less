@@ -3,9 +3,10 @@
   width: 100%;
   height: 40px;
   float: left;
-  margin: 0px 8px;
+  /*margin: 0px 8px;*/
   margin-bottom: 13px;
   fill: @turquoise;
+  cursor: pointer;
 }
 
 .icon {
@@ -43,7 +44,7 @@
     display: flex;
     justify-content: space-around;
     position: absolute;
-    top: 170px;
+    top: 137px;
     width: 100px;
     height: 80px;
     background: url("../img/icon-play.svg") no-repeat;
@@ -78,7 +79,8 @@
 
   .icon {
     &-camera {
-      margin-right: 20px;
+      margin: 0;
+      margin-right: 25px;
     }
     &-phone {
       top: 20px;
@@ -87,6 +89,19 @@
     &-mail {
       top: 20px;
       right: 20px;
+    }
+    &-play {
+      top: 193px;
+    }
+  }
+}
+
+@media @desktop-widths {
+
+  .icon {
+    &-camera {
+      margin: 0;
+      margin-bottom: 12px;
     }
   }
 }

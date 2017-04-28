@@ -1,9 +1,9 @@
 .social {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 25px 0px 30px 0px;
   height: 100%;
-  background: @gray;
+  background-color: @gray;
 }
 
 .social div.logo {
@@ -15,19 +15,45 @@
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
-  padding: 0 30px 30px;
+  padding: 0 0px 25px;
   border-bottom: 1px solid #E5E5E5;
+  width: 180px;
+  margin: auto;
   &--tw {
     .social-icon;
     background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+  }
+  &--tw:hover {
+    .social-icon;
+    background: url("../img/icon-twitter-hover.svg") no-repeat 50% 50%;
+  }
+  &--tw:active {
+    .social-icon;
+    background: url("../img/icon-twitter-active.svg") no-repeat 50% 50%;
   }
   &--in {
     .social-icon;
     background: url("../img/icon-insta.svg") no-repeat 50% 50%;
   }
+  &--in:hover {
+    .social-icon;
+    background: url("../img/icon-insta-hover.svg") no-repeat 50% 50%;
+  }
+  &--in:active {
+    .social-icon;
+    background: url("../img/icon-insta-active.svg") no-repeat 50% 50%;
+  }
   &--fb {
     .social-icon;
     background: url("../img/icon-fb.svg") no-repeat 50% 50%;
+  }
+  &--fb:hover {
+    .social-icon;
+    background: url("../img/icon-fb-hover.svg") no-repeat 50% 50%;
+  }
+  &--fb:active {
+    .social-icon;
+    background: url("../img/icon-fb-active.svg") no-repeat 50% 50%;
   }
 }
 
@@ -39,6 +65,13 @@
     justify-content: space-between;
     padding: 50px;
     align-items: center;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .social .container-main {
+    justify-content: space-between;
+    padding: 0;
   }
 
   .social__link {
