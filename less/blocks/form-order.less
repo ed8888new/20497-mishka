@@ -43,7 +43,8 @@ div > hr {
 }
 
 .form-order__top div {
-  width: 100%;
+  width: 70%;
+  flex-grow: 1;
 }
 
 .form-order__top span {
@@ -59,6 +60,10 @@ div > hr {
   justify-content: space-between;
   border: 0;
   font-weight: bold;
+}
+
+.form-order__field {
+  padding-top: 10px;
 }
 
 .form-order__field .form-order__bottom {
@@ -104,9 +109,9 @@ input[type="checkbox"], input[type="radio"] {
 
 input[type="checkbox"] + label span{
   display: inline-block;
-  width: 40px;
-  margin-right: 10px;
-  height: 40px;
+  width: 36px;
+  margin-right: 23px;
+  height: 35px;
   vertical-align: middle;
   border: 2px solid @gray-dark;
   cursor: pointer;
@@ -114,6 +119,7 @@ input[type="checkbox"] + label span{
 
 input[type="checkbox"]:checked + label span{
   background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+  background-size: 24px;
 }
 
 input[type="radio"] + label:before {
@@ -149,20 +155,27 @@ button.btn {
 
 ::-webkit-input-placeholder {
   color: @gray;
-  font-size: 18px;
+  font-size: 17px;
   width: 100%;
 }
 
 textarea {
-  height: 100px;
+  height: 110px;
   padding: 15px;
   border: 2px solid black;
 }
 
-.form-order__data input[type="text"], .form-order__contacts input {
+.form-order__data input[type="text"] {
   width: 100%;
   border: none;
   padding-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+ .form-order__contacts input {
+  width: 100%;
+  border: none;
+  padding-bottom: 20px;
   border-bottom: 2px solid black;
 }
 
@@ -176,9 +189,37 @@ textarea {
   padding: 4px 2px;
 }
 
+.form-order__color .form-order__bottom label:not(:last-child) {
+  padding: 4px 0px;
+  padding-bottom: 18px;
+}
+
+.form-order__color .form-order__bottom label:last-child {
+  padding: 4px 0px;
+  padding-bottom: 9px;
+}
+
+.form-order__data .form-order__bottom label {
+  padding: 4px 0px;
+  padding-bottom: 19px;
+}
+
+.form-order__data .form-order__bottom label:not(:first-child) {
+  padding-top: 20px;
+}
+
+.form-order__detail {
+  padding-top: 8px;
+}
+
 .form-order__notice {
   font-size: 14px;
-  padding: 15px 0 30px;
+  -webkit-margin-before: 12px;
+  -webkit-margin-after: 30px;
+}
+
+.form-order__final {
+  padding-bottom: 58px;
 }
 
 
